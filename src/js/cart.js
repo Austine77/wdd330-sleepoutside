@@ -6,7 +6,7 @@ function renderCart() {
 
   cartList.innerHTML = "";
 
-  cartItems.forEach(item => {
+  cartItems.forEach((item) => {
     const li = document.createElement("li");
     li.innerHTML = `
       <h3>${item.Name}</h3>
