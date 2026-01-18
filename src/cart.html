@@ -3,38 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sleep Outside | Checkout</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Sleep Outside | Cart</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/cart.js" type="module"></script>
   </head>
 
   <body>
     <header class="divider">
       <div class="logo">
-        <img src="images/noun_Tent_2517.svg" alt="tent image for logo" />
-        <a href="index.html"> Sleep <span class="highlight">Outside</span> </a>
+        <img src="/images/noun_Tent_2517.svg" alt="tent image for logo" />
+        <a href="/index.html">
+          Sleep<span class="highlight">Outside</span>
+        </a>
       </div>
 
       <div class="cart">
-        <a href="cart.html">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <!-- SVG paths unchanged -->
-          </svg>
+        <a href="/cart.html">
+          🛒
         </a>
       </div>
     </header>
 
     <main class="divider">
       <section class="products">
-        <h2>Review & Place your Order</h2>
+        <h2>My Cart</h2>
 
-        <!-- Cart items will be injected here by JS -->
-        <ul class="cart-list"></ul>
+        <ul class="product-list"></ul>
+
+        <p id="cart-empty-message"></p>
+
+        <h3 id="cart-total"></h3>
+
+        <a href="/index.html" class="button">
+          Continue Shopping
+        </a>
       </section>
     </main>
 
-    <footer>&copy; NOT a real business</footer>
-
-    <!-- ✅ THIS IS THE FIX -->
-    <script type="module" src="js/cart.js"></script>
+    <footer>
+      &copy;2026 ⛺ SleepOutside ⛺ WDD 330 ⛺ BYU-Idaho
+    </footer>
   </body>
 </html>
